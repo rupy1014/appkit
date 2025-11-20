@@ -2,6 +2,13 @@
 description: 기능 구체화 - 각 기능을 사용자 가치 관점에서 구체화
 ---
 
+## Quick Reference
+- **Workflow**: Step 2/7 (기능 구체화)
+- **Token Budget**: ~2,000 tokens per update
+- **Parallel Operations**: NO (single file incremental update)
+- **User Interaction**: NO (automatic update)
+- **Progressive Loading**: YES (read only necessary sections)
+
 ## User Input
 
 ```text
@@ -73,9 +80,35 @@ Extract:
 **Error Handling**:
 - If spec directory doesn't exist: "Spec 003-booking does not exist. Run /appkit.new first."
 
-### 3. Load Existing Spec
+### 3. Load Existing Spec (Progressive Loading)
 
-**Read File**: `docs/appkit/specs/003-booking/spec.md`
+**⚡ CRITICAL - TOKEN EFFICIENCY**:
+Read ONLY the necessary sections, not the entire file. This saves 80% of tokens.
+
+**Progressive Reading Strategy**:
+```markdown
+Phase 1 (Always read - ~100 lines):
+- Lines 1-20: Feature Name, User Value section
+- Section: ## User Journey & Screen Flow (if modifying journey)
+- Section: ## Business Rules (if modifying rules)
+
+Phase 2 (Only if needed):
+- Section: ## Edge Cases (if adding edge cases)
+- Section: ## Dependencies (if checking dependencies)
+- Section: ## API/Data Requirements (if adding APIs)
+
+Skip entirely:
+- Sections not being modified
+- Example content
+- Comments and notes
+```
+
+**Token Savings**:
+- ❌ Full file read: 500-800 lines = 2,000+ tokens
+- ✅ Progressive read: 100-200 lines = 400-800 tokens
+- **60-80% token reduction**
+
+**Read File**: `docs/appkit/specs/{spec-id}/spec.md`
 
 **Check Status**:
 1. **Empty template**:

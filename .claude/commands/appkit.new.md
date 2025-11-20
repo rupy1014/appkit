@@ -2,6 +2,13 @@
 description: 아이디어 스케치 - 막연한 아이디어를 서비스 컨셉으로 구체화
 ---
 
+## Quick Reference
+- **Workflow**: Step 1/7 (아이디어 스케치)
+- **Token Budget**: ~3,000 tokens
+- **Parallel Operations**: YES (file creation phase)
+- **User Interaction**: REQUIRED (confirmation before file creation)
+- **Progressive Loading**: NO (initial setup)
+
 ## User Input
 
 ```text
@@ -251,6 +258,14 @@ Phase 2 (3개월): 커뮤니티 & 확장
 
 ### 4. Individual Spec Draft Creation (Based on Overview.md)
 
+**⚡ CRITICAL - PARALLEL EXECUTION REQUIRED**:
+Create ALL spec files in a SINGLE message with multiple Write tool calls. Do NOT create files sequentially.
+
+**Performance Impact**:
+- ❌ Sequential: 10 files × 3 seconds = 30 seconds
+- ✅ Parallel: 1 message with 10 Write calls = 3 seconds
+- **10x speed improvement**
+
 Create **initial draft** `spec.md` file in each spec directory based on overview.md content:
 
 **Important**: This creates **first draft**, not empty templates. Extract relevant information from overview.md for each feature.
@@ -261,7 +276,13 @@ Create **initial draft** `spec.md` file in each spec directory based on overview
 3. Create initial draft with inferred content
 4. Mark sections that need `/appkit.spec` for further detailing
 
-**File**: `docs/appkit/specs/001-persona/spec.md`
+**Execution Pattern**:
+Execute ALL file creations in ONE message (example pattern shown below - do not copy verbatim):
+- Use multiple Write tool calls in a single message
+- Each Write call creates one spec file
+- All spec files created in parallel (5-10 files typical)
+
+**File**: `docs/appkit/specs/001-[feature-name]/spec.md`
 
 **Content**: Draft with overview-based initial content
 

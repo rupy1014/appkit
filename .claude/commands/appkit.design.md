@@ -4,6 +4,13 @@
 
 ---
 
+## Quick Reference
+- **Workflow**: Step 7/7 (개발 준비)
+- **Token Budget**: ~4,000 tokens
+- **Parallel Operations**: YES (entities, APIs, policies file creation)
+- **User Interaction**: NO (automatic generation)
+- **Progressive Loading**: YES (read merge results only)
+
 ## Overview
 
 **This is Step 7 of the logical thinking 7-step workflow**:

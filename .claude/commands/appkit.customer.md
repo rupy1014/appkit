@@ -4,6 +4,13 @@
 
 ---
 
+## Quick Reference
+- **Workflow**: Step 3/7 (고객 스토리)
+- **Token Budget**: ~2,500 tokens
+- **Parallel Operations**: YES (persona + journey file creation)
+- **User Interaction**: NO (automatic generation)
+- **Progressive Loading**: YES (read overview.md sections only)
+
 ## Overview
 
 **This is Step 3 of the logical thinking 7-step workflow**:

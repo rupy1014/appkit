@@ -4,6 +4,13 @@
 
 ---
 
+## Quick Reference
+- **Workflow**: Step 5/7 (MVP 범위 정의)
+- **Token Budget**: ~3,000 tokens
+- **Parallel Operations**: YES (scope + metrics file creation)
+- **User Interaction**: NO (automatic generation)
+- **Progressive Loading**: YES (read specs summary only)
+
 ## Overview
 
 **This is Step 5 of the logical thinking 7-step workflow**:

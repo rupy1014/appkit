@@ -4,6 +4,13 @@
 
 ---
 
+## Quick Reference
+- **Workflow**: Step 6/7 (기획 정돈)
+- **Token Budget**: ~5,000 tokens
+- **Parallel Operations**: YES (read all source files)
+- **User Interaction**: NO (automatic analysis & consolidation)
+- **Progressive Loading**: YES (headers and key sections only)
+
 ## Overview
 
 **This is Step 6 of the logical thinking 7-step workflow**:
@@ -51,14 +58,55 @@ spec, customer, mvp를 각각 만들다 보면 AI가 맥락을 놓치고 일관�
 
 ## What I'll Do
 
-### 1. 소스 문서 수집
+### 1. 소스 문서 수집 (Parallel Loading)
+
+**⚡ CRITICAL - PARALLEL EXECUTION REQUIRED**:
+Read ALL source files in a SINGLE message with multiple Read/Glob tool calls.
+
+**Performance Impact**:
+- ❌ Sequential: 5 files × 2 seconds = 10 seconds
+- ✅ Parallel: 1 message with 5 Read calls = 2 seconds
+- **5x speed improvement**
+
+**Execution Pattern**:
+Use ONE message with multiple tool calls:
+- Glob pattern for all spec files: `docs/appkit/specs/*/spec.md`
+- Read customer-persona.md
+- Read customer-journey.md
+- Read mvp-scope.md
+- Read mvp-metrics.md
+
+**Progressive Loading Strategy**:
+Load ONLY necessary sections from each file:
+```markdown
+From spec files:
+- Feature Name (first 10 lines)
+- User Value section only
+- Dependencies section only
+(Skip: detailed journey, business rules, edge cases)
+
+From customer files:
+- Primary Persona only (first 50 lines)
+- Pain Points section
+(Skip: secondary personas, full journey details)
+
+From MVP files:
+- Phase 0 features list only
+- Success metrics section
+(Skip: detailed phase descriptions, examples)
+```
+
+**Token Savings**:
+- ❌ Full files: 10 specs × 500 lines = 5,000 lines
+- ✅ Progressive: 10 specs × 50 lines = 500 lines
+- **90% token reduction**
 
 **읽을 파일들**:
-- `docs/appkit/specs/*/spec.md` (모든 기능 스펙)
-- `docs/appkit/customer-persona.md` (타겟 고객)
-- `docs/appkit/customer-journey.md` (고객 여정)
-- `docs/appkit/mvp-scope.md` (MVP 범위)
-- `docs/appkit/mvp-metrics.md` (검증 지표)
+- `docs/appkit/specs/*/spec.md` (모든 기능 스펙 - 핵심 섹션만)
+- `docs/appkit/customer-persona.md` (타겟 고객 - Primary만)
+- `docs/appkit/customer-journey.md` (고객 여정 - Pain Points만)
+- `docs/appkit/mvp-scope.md` (MVP 범위 - Phase 0만)
+- `docs/appkit/mvp-metrics.md` (검증 지표 - Success Metrics만)
 
 ### 2. 기획 일관성 분석
 

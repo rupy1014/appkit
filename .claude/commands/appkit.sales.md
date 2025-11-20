@@ -4,6 +4,13 @@
 
 ---
 
+## Quick Reference
+- **Workflow**: Step 4/7 (세일즈 랜딩)
+- **Token Budget**: ~2,500 tokens
+- **Parallel Operations**: YES (landing + value proposition file creation)
+- **User Interaction**: NO (automatic generation)
+- **Progressive Loading**: YES (read customer persona + specs summary)
+
 ## Overview
 
 **This is Step 4 of the logical thinking 7-step workflow**:

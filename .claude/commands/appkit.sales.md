@@ -272,6 +272,35 @@ Subject: "김대리님, 이번 주말 테니스 어떠세요?"
    - Pain-Gain 매트릭스
    - 차별화 포인트
 
+3. **`docs/appkit/landing-page.html`** (선택사항)
+   - 실제 HTML 랜딩 페이지
+   - `.specify/templates/sales-landing-template.html` 템플릿 기반으로 생성
+
+---
+
+## Template Reference
+
+### 랜딩 페이지 HTML 템플릿
+
+랜딩 페이지를 실제 HTML로 만들 때는 아래 템플릿을 참고하세요:
+
+```
+.specify/templates/sales-landing-template.html
+```
+
+**템플릿 특징**:
+- SEO 최적화 (Open Graph, Twitter Card, JSON-LD 구조화 데이터)
+- 반응형 디자인 (모바일 우선)
+- 모던한 UI/UX (Noto Sans KR 폰트, 부드러운 애니메이션)
+- 섹션 구성: Hero → Problem → Solution → Benefits → Social Proof → FAQ → CTA
+- CSS 변수 기반 테마 시스템 (Primary: #7C3AED)
+
+**사용법**:
+1. 템플릿을 복사하여 새 파일 생성
+2. 세일즈 메시지에 맞게 텍스트 수정
+3. 브랜드 컬러와 이미지 교체
+4. CTA 링크 및 폼 연결
+
 ---
 
 ## Integration Points

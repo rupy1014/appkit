@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Clauders - 바이브 프로덕트 스터디 커뮤니티 | AI로 함께 만드는 빌더 모임</title>
+    <meta name="description" content="AI로 프로덕트 만들기, 혼자는 막막하셨죠? Clauders 스터디에서 함께 배우고 만들어보세요. 4주간 팀과 함께 나만의 첫 프로덕트를 완성합니다.">
+    <meta name="keywords" content="Clauders, Claude, Claude AI, Anthropic, 바이브 프로덕트, AI 스터디, 프로덕트 스터디, 빌더 커뮤니티, 사이드 프로젝트, Cursor, MVP 개발, AI 프로덕트">
+    <meta name="author" content="Clauders">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clauders.ai/">
+    <meta property="og:title" content="Clauders - 바이브 프로덕트 스터디 커뮤니티 | AI로 함께 만드는 빌더 모임">
+    <meta property="og:description" content="AI로 프로덕트 만들기, 혼자는 막막하셨죠? 4주간 팀과 함께 배우며 나만의 첫 프로덕트를 완성합니다.">
+    <meta property="og:image" content="https://clauders.ai/og-image.png">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="Clauders">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://clauders.ai/">
+    <meta name="twitter:title" content="Clauders - 바이브 프로덕트 스터디 커뮤니티 | AI로 함께 만드는 빌더 모임">
+    <meta name="twitter:description" content="AI로 프로덕트 만들기, 혼자는 막막하셨죠? 4주간 팀과 함께 배우며 나만의 첫 프로덕트를 완성합니다.">
+    <meta name="twitter:image" content="https://clauders.ai/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clauders.ai/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#7C3AED">
+
+    <!-- Structured Data / JSON-LD -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Clauders",
+        "url": "https://clauders.ai",
+        "logo": "https://clauders.ai/og-image.png",
+        "description": "바이브 프로덕트 스터디 커뮤니티. AI로 함께 배우고 만드는 빌더들의 모임.",
+        "sameAs": [
+            "https://open.kakao.com/o/gyX5gD4h",
+            "https://www.youtube.com/@AI%EC%9E%A1%EB%8F%8C%EC%9D%B4"
+        ]
+    }
+    </script>
+
+    <!-- Event Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Clauders 1기 - 바이브 프로덕트 스터디",
+        "description": "AI로 프로덕트 만들기, 혼자는 막막하셨죠? 4주간 팀과 함께 배우며 나만의 첫 프로덕트를 완성합니다.",
+        "startDate": "2024-12-22",
+        "endDate": "2025-01-19",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+            "@type": "VirtualLocation",
+            "url": "https://clauders.ai"
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Clauders",
+            "url": "https://clauders.ai"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "200000",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2024-12-01",
+            "url": "https://clauders.ai/apply.html"
+        },
+        "image": "https://clauders.ai/og-image.png"
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "개발 전혀 못하는데 참여할 수 있나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네. 개발 경험이 없어도 됩니다. AI 시대에는 아이디어와 실행력이 더 중요합니다. 스터디에서 함께 배우며 만들어가면 됩니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "일주일에 시간 투자를 얼마나 해야 하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "최소 주 5~10시간을 권장합니다. 금요일 저녁 8시 라이브 세션(1시간) + 팀 작업 시간이 필요합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "온라인으로만 참여 가능한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네, 100% 온라인으로 진행됩니다. Slack과 Notion으로 협업하고, 팀별 오프라인 모임은 자율입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "팀은 어떻게 구성되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "오리엔테이션에서 아이디어를 공유하고, 관심사가 맞는 사람들끼리 자율적으로 팀을 구성합니다. 운영진이 매칭을 도와드립니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "팀원이 안 맞으면 어떻게 하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "초반에 팀 변경이 가능합니다. 운영진이 중재하고, 필요시 다른 팀과 조율해드립니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "기술 스택 제한이 있나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "없습니다. Claude, Cursor, Replit 등 어떤 도구든 사용 가능합니다. 능력자가 편한 스택으로 진행하면 됩니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "만든 서비스의 권리는 누구에게?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "MVP 결과물만 Clauders 커뮤니티에 공유됩니다. 단, 이후 사업화 진행은 팀원들끼리 합의하시면 됩니다."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #7C3AED;
+            --primary-light: #8B5CF6;
+            --primary-dark: #6D28D9;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F5F7FA;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --text-muted: #9CA3AF;
+            --border: #E5E7EB;
+            --accent-yellow: #F59E0B;
+            --accent-green: #10B981;
+            --accent-blue: #3B82F6;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-white);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @media (min-width: 912px) {
+            .container {
+                padding: 0 40px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Scroll Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-on-scroll.delay-1 { transition-delay: 0.1s; }
+        .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
+        .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
+        .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 50%, #FDF4FF 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 8s ease infinite;
+            padding: 80px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 912px) {
+            .hero {
+                padding: 120px 40px 140px;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease-out, pulse 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        .badge::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light), var(--primary));
+            background-size: 200% 100%;
+            animation: shimmer 2s linear infinite;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.25;
+            color: var(--text-primary);
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+            letter-spacing: -0.03em;
+        }
+
+        @media (min-width: 912px) {
+            .hero h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            animation: fadeInUp 0.6s ease-out 0.4s both;
+            line-height: 1.7;
+        }
+
+        @media (min-width: 912px) {
+            .hero .tagline {
+                font-size: 1.3rem;
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 18px 48px;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease-out 0.6s both;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
+            letter-spacing: -0.01em;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        /* Section */
+        section {
+            padding: 80px 0;
+        }
+
+        @media (min-width: 912px) {
+            section {
+                padding: 100px 0;
+            }
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        @media (min-width: 912px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        @media (min-width: 912px) {
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--bg-white);
+        }
+
+        .problem-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .problem-list li {
+            font-size: 1.1rem;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: transform 0.3s ease, padding-left 0.3s ease;
+        }
+
+        .problem-list li:hover {
+            transform: translateX(8px);
+            padding-left: 8px;
+        }
+
+        .problem-list li::before {
+            content: "😩";
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .problem-list li:hover::before {
+            transform: scale(1.2);
+        }
+
+        .highlight-box {
+            background: var(--bg-gray);
+            border-radius: 20px;
+            padding: 40px 28px;
+            text-align: center;
+            max-width: 620px;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(124, 58, 237, 0.1);
+            border-color: rgba(124, 58, 237, 0.1);
+        }
+
+        @media (min-width: 912px) {
+            .highlight-box {
+                padding: 52px;
+            }
+        }
+
+        .highlight-box p {
+            font-size: 1.15rem;
+            margin-bottom: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .highlight-box .key {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Timeline */
+        .timeline-section {
+            background: var(--bg-gray);
+        }
+
+        /* Schedule Banner */
+        .schedule-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 48px;
+            color: white;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 10px 40px rgba(124, 58, 237, 0.3);
+        }
+
+        .schedule-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .schedule-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .schedule-title h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .schedule-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .schedule-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 16px 20px;
+            text-align: center;
+            min-width: 100px;
+            transition: all 0.3s ease;
+        }
+
+        .schedule-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .schedule-item.highlight {
+            background: white;
+            color: var(--primary);
+        }
+
+        .schedule-item.highlight .schedule-date {
+            color: var(--primary);
+        }
+
+        .schedule-item.highlight .schedule-label {
+            color: var(--primary-dark);
+        }
+
+        .schedule-date {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .schedule-label {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .schedule-arrow {
+            font-size: 20px;
+            opacity: 0.7;
+        }
+
+        .schedule-note {
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .schedule-banner {
+                padding: 24px 16px;
+            }
+
+            .schedule-items {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .schedule-item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+                padding: 12px 20px;
+            }
+
+            .schedule-date {
+                font-size: 1.25rem;
+                margin-bottom: 0;
+            }
+
+            .schedule-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        .timeline-detailed {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-detailed {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .timeline-detailed {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .timeline-phase {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-phase:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.12);
+            border-color: var(--primary-light);
+        }
+
+        .phase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .phase-week {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .phase-tag {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .phase-tag.discovery {
+            background: #FEF3C7;
+            color: #92400E;
+        }
+
+        .phase-tag.define {
+            background: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .phase-tag.build {
+            background: #EDE9FE;
+            color: #5B21B6;
+        }
+
+        .phase-tag.launch {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+
+        .timeline-phase h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .phase-list {
+            list-style: none;
+        }
+
+        .phase-list li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 6px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .phase-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .after-graduation {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            border-radius: 16px;
+            padding: 28px 32px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .graduation-icon {
+            font-size: 3rem;
+            flex-shrink: 0;
+        }
+
+        .graduation-content h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .graduation-content p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .graduation-content strong {
+            color: var(--primary);
+        }
+
+        @media (max-width: 600px) {
+            .after-graduation {
+                flex-direction: column;
+                text-align: center;
+                padding: 24px;
+            }
+
+            .graduation-icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Roles */
+        .roles-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .roles-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .role-card {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .role-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(124, 58, 237, 0.03) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .role-card:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
+            transform: translateY(-8px);
+        }
+
+        .role-card:hover::before {
+            opacity: 1;
+        }
+
+        .role-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 0 auto 20px;
+            transition: transform 0.4s ease;
+        }
+
+        .role-card:hover .role-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .role-card.insider .role-icon {
+            background: #FEF3C7;
+        }
+
+        .role-card.builder .role-icon {
+            background: #EDE9FE;
+        }
+
+        .role-card.executor .role-icon {
+            background: #D1FAE5;
+        }
+
+        .role-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .role-card .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .role-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .role-card ul li {
+            padding: 10px 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            transition: transform 0.2s ease;
+            line-height: 1.5;
+        }
+
+        .role-card:hover ul li {
+            transform: translateX(4px);
+        }
+
+        .role-card ul li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .role-card blockquote {
+            font-size: 14px;
+            color: var(--text-secondary);
+            background: var(--bg-gray);
+            padding: 18px 20px;
+            border-radius: 12px;
+            text-align: left;
+            font-style: normal;
+            position: relative;
+            transition: background 0.3s ease;
+            line-height: 1.6;
+        }
+
+        .role-card:hover blockquote {
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+        }
+
+        /* Team Structure */
+        .team-structure {
+            background: var(--bg-gray);
+        }
+
+        .structure-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .structure-item {
+            text-align: center;
+            padding: 28px 32px;
+            background: var(--bg-white);
+            border-radius: 16px;
+            flex: 1;
+            max-width: 240px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .structure-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+            border-color: var(--primary-light);
+        }
+
+        .structure-item .icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .structure-item:hover .icon {
+            transform: scale(1.15);
+        }
+
+        .structure-item .label {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .structure-item .desc {
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .structure-arrow {
+            font-size: 24px;
+            color: var(--primary);
+            animation: pulse 1.5s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .structure-visual {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .structure-item {
+                width: 100%;
+                max-width: 280px;
+                padding: 20px 24px;
+            }
+
+            .structure-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        /* Who Is This For */
+        .who-is-for-section {
+            background: var(--bg-white);
+        }
+
+        .who-is-for-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .who-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: var(--bg-white);
+            padding: 20px 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .who-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
+        }
+
+        .who-check {
+            color: var(--primary);
+            font-size: 18px;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .who-item p {
+            color: var(--text-primary);
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .who-is-for-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Benefits */
+        .benefits-section {
+            background: var(--bg-gray);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .benefit-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .benefit-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .benefit-card .number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover .number {
+            transform: scale(1.1);
+        }
+
+        .benefit-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .benefit-card p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: var(--bg-gray);
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            border-radius: 24px;
+            padding: 48px 32px;
+            max-width: 450px;
+            margin: 0 auto;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 50%);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(124, 58, 237, 0.2);
+        }
+
+        @media (min-width: 912px) {
+            .pricing-card {
+                padding: 48px;
+            }
+        }
+
+        .pricing-card .original {
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-bottom: 4px;
+            position: relative;
+        }
+
+        .pricing-card .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            position: relative;
+            letter-spacing: -0.02em;
+        }
+
+        .pricing-card .earlybird {
+            display: inline-block;
+            background: var(--accent-yellow);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            animation: pulse 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        .pricing-card .refund {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 28px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover .refund {
+            transform: scale(1.02);
+        }
+
+        .pricing-card .refund p {
+            color: var(--accent-green);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .pricing-card .refund .refund-detail {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 13px;
+            margin-top: 6px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: var(--bg-gray);
+        }
+
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            padding: 24px 28px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.1);
+            transform: translateX(5px);
+        }
+
+        .faq-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .faq-item:hover h4 {
+            color: var(--primary);
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* CTA Final */
+        .cta-final {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, var(--bg-white) 0%, #F5F3FF 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @media (min-width: 912px) {
+            .cta-final {
+                padding: 100px 40px;
+            }
+        }
+
+        .cta-final h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            position: relative;
+            letter-spacing: -0.02em;
+        }
+
+        @media (min-width: 912px) {
+            .cta-final h2 {
+                font-size: 2.75rem;
+            }
+        }
+
+        .cta-final p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .cta-buttons a {
+            padding: 16px 32px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-buttons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-3px);
+        }
+
+        .cta-buttons a:hover::before {
+            left: 100%;
+        }
+
+        .cta-buttons .insider-btn {
+            background: #FEF3C7;
+            color: #92400E;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+        }
+
+        .cta-buttons .insider-btn:hover {
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-buttons .builder-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+        }
+
+        .cta-buttons .builder-btn:hover {
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        .cta-buttons .executor-btn {
+            background: #D1FAE5;
+            color: #065F46;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+        }
+
+        .cta-buttons .executor-btn:hover {
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 80px 20px 48px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            font-size: 14px;
+            background: var(--bg-gray);
+        }
+
+        footer strong {
+            color: var(--text-secondary);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            margin-bottom: 36px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+        }
+
+        .footer-logo h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-tagline {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px 20px;
+            background: var(--bg-white);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            border-color: var(--primary-light);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+        }
+
+        .footer-divider {
+            width: 60px;
+            height: 1px;
+            background: var(--border);
+            margin: 0 auto 24px;
+        }
+
+        .footer-project {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 28px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .footer-project:hover {
+            border-color: var(--primary-light);
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.1);
+        }
+
+        .footer-project-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .footer-project-header span {
+            font-size: 1.75rem;
+        }
+
+        .footer-project-header h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-project p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.2s ease;
+        }
+
+        .footer-project-link:hover {
+            gap: 10px;
+        }
+
+        .footer-copyright {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .social-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+
+        .social-icon:hover {
+            color: var(--primary);
+            border-color: var(--primary-light);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+            transform: translateY(-2px);
+        }
+
+        /* Examples Section */
+        .examples-section {
+            background: var(--bg-gray);
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            max-width: 1000px;
+            margin: 0 auto 32px;
+        }
+
+        @media (min-width: 768px) {
+            .examples-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .examples-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .example-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .example-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.1);
+            border-color: var(--primary-light);
+        }
+
+        .example-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .example-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .example-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .example-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            color: var(--primary);
+        }
+
+        .examples-cta {
+            text-align: center;
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .examples-cta p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Mentor Section */
+        .mentor-section {
+            background: var(--bg-white);
+        }
+
+        .mentor-grid {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .mentor-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--bg-gray);
+            border-radius: 20px;
+            padding: 28px 32px;
+            width: 400px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.1);
+        }
+
+        .mentor-avatar {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .mentor-info h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .mentor-role {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .mentor-credits {
+            list-style: none;
+        }
+
+        .mentor-credits li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 3px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mentor-credits li::before {
+            content: "•";
+            color: var(--primary-light);
+        }
+
+        .mentor-project {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .project-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .project-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .showcase-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg-gray);
+            border-radius: 16px;
+            padding: 20px 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .showcase-item:hover {
+            background: var(--bg-white);
+            border-color: var(--primary-light);
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.1);
+        }
+
+        .showcase-icon {
+            font-size: 2rem;
+        }
+
+        .showcase-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .showcase-content h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .showcase-content p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .showcase-arrow {
+            font-size: 1.25rem;
+            color: var(--primary);
+            transition: transform 0.2s ease;
+        }
+
+        .showcase-item:hover .showcase-arrow {
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 480px) {
+            .mentor-card {
+                width: 100%;
+                padding: 20px;
+                gap: 16px;
+            }
+
+            .mentor-avatar {
+                width: 56px;
+                height: 56px;
+                font-size: 1.25rem;
+            }
+
+            .mentor-info h3 {
+                font-size: 1.1rem;
+            }
+
+            .mentor-role {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+
+            .mentor-credits {
+                font-size: 12px;
+            }
+        }
+
+        /* Counter Animation */
+        .count-up {
+            display: inline-block;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            background: var(--bg-white);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 48px;
+        }
+
+        @media (min-width: 768px) {
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .process-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .process-card {
+            background: var(--bg-gray);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.12);
+            border-color: var(--primary-light);
+            background: var(--bg-white);
+        }
+
+        .process-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .process-card:hover .process-icon {
+            transform: scale(1.15);
+        }
+
+        .process-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            background: var(--bg-white);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .process-badge.free {
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            color: #065F46;
+            border: none;
+        }
+
+        .process-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .process-flow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 8px;
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+            border-radius: 16px;
+            padding: 24px 20px;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-white);
+            padding: 10px 14px;
+            border-radius: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .flow-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(124, 58, 237, 0.15);
+        }
+
+        .flow-num {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .flow-text {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .flow-arrow {
+            color: var(--primary);
+            font-size: 16px;
+            font-weight: 600;
+            animation: pulse 1.5s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .process-flow {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .flow-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <canvas id="particle-canvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <span class="badge">✨ 클로더즈 스터디 1기 모집</span>
+            <h1>함께 배우고, 만드는<br>바이브 프로덕트</h1>
+            <p class="tagline">AI로 프로덕트 만들기, 혼자는 막막하셨죠?<br>4주간 스터디에서 함께 배우며 나만의 첫 프로덕트를 완성하세요.</p>
+            <a href="/apply.html" class="cta-button">스터디 참여하기</a>
+        </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">분명히 해결책이 있을 것 같은데,<br>만들 방법이 없었죠?</h2>
+            <ul class="problem-list">
+                <li class="animate-on-scroll delay-1">회사에서 매일 반복하는 비효율, 자동화하고 싶음</li>
+                <li class="animate-on-scroll delay-2">창업 아이디어는 있는데 MVP 만들 방법이 없음</li>
+                <li class="animate-on-scroll delay-3">외주 맡기자니 비용이, 혼자 하자니 기술이 없음</li>
+            </ul>
+            <div class="highlight-box animate-on-scroll delay-4">
+                <p><strong>이제 다릅니다.</strong></p>
+                <p>AI가 코드를 짜주는 시대,<br>병목은 더 이상 "개발력"이 아닙니다.</p>
+                <p class="key">함께 배우고, 함께 만들면 됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">4주간 이렇게 진행돼요</h2>
+            <p class="section-subtitle animate-on-scroll">업무 자동화 도구든, 서비스 MVP든 — 내 문제를 해결하는 프로덕트를 만듭니다.<br>완벽하지 않아도 됩니다. 핵심 가치를 검증할 수 있는 최소 제품이면 충분합니다.</p>
+
+            <!-- 1기 일정 -->
+            <div class="schedule-banner animate-on-scroll">
+                <div class="schedule-title">
+                    <span class="schedule-badge">1기</span>
+                    <h3>Clauders 1기 일정</h3>
+                </div>
+                <div class="schedule-items">
+                    <div class="schedule-item">
+                        <span class="schedule-date">12/15</span>
+                        <span class="schedule-label">모집 마감</span>
+                    </div>
+                    <div class="schedule-arrow">→</div>
+                    <div class="schedule-item">
+                        <span class="schedule-date">12/22</span>
+                        <span class="schedule-label">오리엔테이션</span>
+                    </div>
+                    <div class="schedule-arrow">→</div>
+                    <div class="schedule-item">
+                        <span class="schedule-date">12/29</span>
+                        <span class="schedule-label">팀빌딩 + 빌드</span>
+                    </div>
+                    <div class="schedule-arrow">→</div>
+                    <div class="schedule-item highlight">
+                        <span class="schedule-date">1/19</span>
+                        <span class="schedule-label">데모데이</span>
+                    </div>
+                </div>
+                <p class="schedule-note">* 오리엔테이션 + 4주 빌드 + 데모데이 (연말연시 방학 포함)</p>
+            </div>
+
+            <div class="timeline-detailed">
+                <div class="timeline-phase animate-on-scroll delay-1">
+                    <div class="phase-header">
+                        <span class="phase-week">Week 1</span>
+                        <span class="phase-tag discovery">Discovery</span>
+                    </div>
+                    <h3>아이디어 → 전략</h3>
+                    <ul class="phase-list">
+                        <li>아이디어 구체화 워크숍</li>
+                        <li>시장 리서치 & 경쟁 분석</li>
+                        <li>타깃 고객 & 포지셔닝</li>
+                        <li>MVP 범위 산정</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-phase animate-on-scroll delay-2">
+                    <div class="phase-header">
+                        <span class="phase-week">Week 2</span>
+                        <span class="phase-tag define">Define</span>
+                    </div>
+                    <h3>전략 → 설계</h3>
+                    <ul class="phase-list">
+                        <li>핵심 기능 우선순위 정리</li>
+                        <li>와이어프레임 & 플로우</li>
+                        <li>기술 스택 결정</li>
+                        <li>개발 환경 세팅</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-phase animate-on-scroll delay-3">
+                    <div class="phase-header">
+                        <span class="phase-week">Week 3</span>
+                        <span class="phase-tag build">Build</span>
+                    </div>
+                    <h3>설계 → 개발</h3>
+                    <ul class="phase-list">
+                        <li>AI 도구로 빠른 개발</li>
+                        <li>스프린트 & 리뷰</li>
+                        <li>실시간 피드백 반영</li>
+                        <li>핵심 기능 완성</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-phase animate-on-scroll delay-4">
+                    <div class="phase-header">
+                        <span class="phase-week">Week 4</span>
+                        <span class="phase-tag launch">Launch</span>
+                    </div>
+                    <h3>개발 → 런칭</h3>
+                    <ul class="phase-list">
+                        <li>QA & 버그 수정</li>
+                        <li>배포 & 도메인 연결</li>
+                        <li>런칭 콘텐츠 제작</li>
+                        <li>첫 사용자 확보</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="after-graduation animate-on-scroll">
+                <div class="graduation-icon">🧠</div>
+                <div class="graduation-content">
+                    <h4>집단지성의 힘</h4>
+                    <p>같은 기수의 모든 MVP 결과물은 서로 <strong>공유되고 참고</strong>할 수 있습니다.<br>다양한 사람들의 문제, 니즈, 솔루션을 경험하며 인사이트를 얻고 — 진짜 <strong>빌더</strong>로 성장하세요.</p>
+                </div>
+            </div>
+
+            <div class="after-graduation animate-on-scroll" style="margin-top: 20px;">
+                <div class="graduation-icon">🎓</div>
+                <div class="graduation-content">
+                    <h4>졸업 후에는?</h4>
+                    <p>스터디 MVP 결과물은 <strong>Clauders 커뮤니티에 공유</strong>됩니다.<br>이를 기반으로 사업화하는 것은 자율이며, 이익 분배 등은 팀원들끼리 합의하시면 됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="who-is-for-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">누구를 위한 스터디인가요?</h2>
+            <p class="section-subtitle animate-on-scroll">아래 중 하나라도 해당된다면, 바로 당신입니다</p>
+            <div class="who-is-for-grid">
+                <div class="who-item animate-on-scroll delay-1">
+                    <span class="who-check">&#10003;</span>
+                    <p>AI로 뭔가 만들어보고 싶은데, 혼자는 막막한 분</p>
+                </div>
+                <div class="who-item animate-on-scroll delay-1">
+                    <span class="who-check">&#10003;</span>
+                    <p>현장에서 매일 겪는 불편함을 해결하고 싶은 분</p>
+                </div>
+                <div class="who-item animate-on-scroll delay-2">
+                    <span class="who-check">&#10003;</span>
+                    <p>사이드 프로젝트를 시작만 하고 끝내본 적 없는 분</p>
+                </div>
+                <div class="who-item animate-on-scroll delay-2">
+                    <span class="who-check">&#10003;</span>
+                    <p>개발자 없이도 프로덕트를 만들 수 있는지 궁금한 분</p>
+                </div>
+                <div class="who-item animate-on-scroll delay-3">
+                    <span class="who-check">&#10003;</span>
+                    <p>창업에 관심 있지만, 첫 발을 어디서 떼야 할지 모르는 분</p>
+                </div>
+                <div class="who-item animate-on-scroll delay-3">
+                    <span class="who-check">&#10003;</span>
+                    <p>함께 만들고, 함께 성장할 동료가 필요한 분</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">스터디를 마치면</h2>
+            <p class="section-subtitle animate-on-scroll">MVP와 함께, 진짜 창업 경험을 가져갑니다</p>
+            <div class="benefits-grid">
+                <div class="benefit-card animate-on-scroll delay-1">
+                    <div class="number">01</div>
+                    <h4>런칭된 MVP</h4>
+                    <p>검증 가능한 제품</p>
+                </div>
+                <div class="benefit-card animate-on-scroll delay-2">
+                    <div class="number">02</div>
+                    <h4>검증된 가설</h4>
+                    <p>시장 반응 데이터</p>
+                </div>
+                <div class="benefit-card animate-on-scroll delay-3">
+                    <div class="number">03</div>
+                    <h4>팀 & 네트워크</h4>
+                    <p>빌더 커뮤니티</p>
+                </div>
+                <div class="benefit-card animate-on-scroll delay-4">
+                    <div class="number">04</div>
+                    <h4>런칭 스토리</h4>
+                    <p>콘텐츠화된 여정</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples -->
+    <section class="examples-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">함께 만들어볼 것들</h2>
+            <p class="section-subtitle animate-on-scroll">내가 겪는 문제를 해결하는 프로덕트 — 뭐든 가능합니다</p>
+
+            <div class="examples-grid">
+                <div class="example-card animate-on-scroll delay-1">
+                    <span class="example-icon">📊</span>
+                    <h3>업무 자동화 도구</h3>
+                    <p>반복되는 엑셀 작업, 보고서 생성, 데이터 취합을 자동으로</p>
+                    <span class="example-tag">자동화</span>
+                </div>
+
+                <div class="example-card animate-on-scroll delay-2">
+                    <span class="example-icon">🛒</span>
+                    <h3>버티컬 SaaS</h3>
+                    <p>특정 업종(미용실, 학원, 부동산)을 위한 예약·관리 시스템</p>
+                    <span class="example-tag">서비스</span>
+                </div>
+
+                <div class="example-card animate-on-scroll delay-3">
+                    <span class="example-icon">💬</span>
+                    <h3>AI 자동 응답 봇</h3>
+                    <p>카카오톡, 유튜브, 인스타 댓글을 AI가 자동으로 분류하고 응답</p>
+                    <span class="example-tag">AI</span>
+                </div>
+
+                <div class="example-card animate-on-scroll delay-4">
+                    <span class="example-icon">🔗</span>
+                    <h3>워크플로우 연동</h3>
+                    <p>노션-슬랙-구글시트 연결, 승인 프로세스 자동화</p>
+                    <span class="example-tag">연동</span>
+                </div>
+
+                <div class="example-card animate-on-scroll delay-1">
+                    <span class="example-icon">💳</span>
+                    <h3>결제·구독 플랫폼</h3>
+                    <p>크리에이터, 코치를 위한 멤버십·결제 시스템</p>
+                    <span class="example-tag">커머스</span>
+                </div>
+
+                <div class="example-card animate-on-scroll delay-2">
+                    <span class="example-icon">📝</span>
+                    <h3>콘텐츠 생성 도구</h3>
+                    <p>블로그 글, SNS 포스트, 뉴스레터를 AI로 자동 생성</p>
+                    <span class="example-tag">생산성</span>
+                </div>
+            </div>
+
+            <div class="examples-cta animate-on-scroll">
+                <p>💡 "이런 것도 가능할까요?" 궁금하면 오픈카톡에서 물어보세요</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor -->
+    <section class="mentor-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">누가 운영하나요?</h2>
+            <p class="section-subtitle animate-on-scroll">AI로 실제 서비스를 만들어본 사람들이 스터디를 이끕니다</p>
+
+            <div class="mentor-grid">
+                <div class="mentor-card animate-on-scroll delay-2">
+                    <div class="mentor-avatar">Sh</div>
+                    <div class="mentor-info">
+                        <h3>션</h3>
+                        <p class="mentor-role">모더레이터</p>
+                        <ul class="mentor-credits">
+                            <li>20년차 Product Developer</li>
+                            <li>해커톤 다수 수상</li>
+                            <li>사업개발 · 프로덕트 전략 전문</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mentor-card animate-on-scroll delay-1">
+                    <div class="mentor-avatar">TS</div>
+                    <div class="mentor-info">
+                        <h3>AI잡돌이</h3>
+                        <p class="mentor-role">기술 멘토</p>
+                        <ul class="mentor-credits">
+                            <li>Bootpay 공동창업자</li>
+                            <li>15년차 풀스택 개발자</li>
+                            <li>Autonomey · 여러 서비스 개발</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="mentor-project animate-on-scroll">
+                <div class="project-label">운영진이 만든 서비스</div>
+                <div class="project-showcase">
+                    <a href="https://autonomey.com" target="_blank" class="showcase-item">
+                        <span class="showcase-icon">🤖</span>
+                        <div class="showcase-content">
+                            <h4>Autonomey</h4>
+                            <p>AI 유튜브 댓글 자동 응답 시스템</p>
+                        </div>
+                        <span class="showcase-arrow">→</span>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">참가비</h2>
+            <p class="section-subtitle animate-on-scroll">끝까지 완주하면 5만원 환급</p>
+            <div class="pricing-card animate-on-scroll">
+                <p class="price">200,000원</p>
+                <div class="refund">
+                    <p>✨ 완주 시 50,000원 환급!</p>
+                    <p class="refund-detail">라이브 세션 전체 참석 + 데모데이 발표 참여</p>
+                </div>
+                <a href="/apply.html" class="cta-button">지금 신청하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">어떻게 진행되나요?</h2>
+            <p class="section-subtitle animate-on-scroll">팀이 빌드에만 집중할 수 있도록, 나머지는 저희가 준비합니다</p>
+
+            <div class="process-grid">
+                <div class="process-card animate-on-scroll delay-1">
+                    <div class="process-icon">💬</div>
+                    <div class="process-badge free">무료 제공</div>
+                    <h3>Slack 워크스페이스</h3>
+                    <p>팀별 전용 채널과 전체 커뮤니티 채널을 제공합니다. 실시간 소통과 멘토 Q&A가 여기서 진행됩니다.</p>
+                </div>
+
+                <div class="process-card animate-on-scroll delay-2">
+                    <div class="process-icon">📋</div>
+                    <div class="process-badge free">무료 제공</div>
+                    <h3>Notion 템플릿</h3>
+                    <p>프로젝트 관리, 스프린트 보드, 문서화 템플릿을 제공합니다. 바로 사용할 수 있는 검증된 구조입니다.</p>
+                </div>
+
+                <div class="process-card animate-on-scroll delay-3">
+                    <div class="process-icon">💳</div>
+                    <div class="process-badge free">무료 지원</div>
+                    <h3>결제 · 구독 연동</h3>
+                    <p>PG 가맹비 무료, 구독 모델 기획·구현까지 지원합니다. 런칭 후 바로 수익화가 가능합니다.</p>
+                </div>
+
+                <div class="process-card animate-on-scroll delay-4">
+                    <div class="process-icon">🎓</div>
+                    <div class="process-badge">주 1회</div>
+                    <h3>라이브 세션</h3>
+                    <p>매주 금요일 저녁 8시, 라이브 세션에서 진행 상황을 공유하고 막히는 부분은 함께 해결합니다.</p>
+                </div>
+            </div>
+
+            <div class="process-flow animate-on-scroll">
+                <div class="flow-step">
+                    <span class="flow-num">1</span>
+                    <span class="flow-text">신청 & 팀 매칭</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-num">2</span>
+                    <span class="flow-text">Slack 초대 & Notion 세팅</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-num">3</span>
+                    <span class="flow-text">4주 빌드</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-num">4</span>
+                    <span class="flow-text">데모데이 & 런칭</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">자주 묻는 질문</h2>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll delay-1">
+                    <h4>Q. 개발 전혀 못하는데 참여할 수 있나요?</h4>
+                    <p>네. 개발 경험이 없어도 됩니다. AI 시대에는 아이디어와 실행력이 더 중요합니다. 스터디에서 함께 배우며 만들어가면 됩니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-2">
+                    <h4>Q. 일주일에 시간 투자를 얼마나 해야 하나요?</h4>
+                    <p>최소 주 5~10시간을 권장합니다. 금요일 저녁 8시 라이브 세션(1시간) + 팀 작업 시간이 필요합니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-3">
+                    <h4>Q. 온라인으로만 참여 가능한가요?</h4>
+                    <p>네, 100% 온라인으로 진행됩니다. Slack과 Notion으로 협업하고, 팀별 오프라인 모임은 자율입니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-4">
+                    <h4>Q. 팀은 어떻게 구성되나요?</h4>
+                    <p>오리엔테이션에서 아이디어를 공유하고, 관심사가 맞는 사람들끼리 자율적으로 팀을 구성합니다. 운영진이 매칭을 도와드립니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-1">
+                    <h4>Q. 팀원이 안 맞으면 어떻게 하나요?</h4>
+                    <p>초반에 팀 변경이 가능합니다. 운영진이 중재하고, 필요시 다른 팀과 조율해드립니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-2">
+                    <h4>Q. 기술 스택 제한이 있나요?</h4>
+                    <p>없습니다. Claude, Cursor, Replit 등 어떤 도구든 사용 가능합니다. 능력자가 편한 스택으로 진행하면 됩니다.</p>
+                </div>
+                <div class="faq-item animate-on-scroll delay-3">
+                    <h4>Q. 만든 서비스의 권리는 누구에게?</h4>
+                    <p>MVP 결과물만 Clauders 커뮤니티에 공유됩니다. 단, 이후 사업화 진행은 팀원들끼리 합의하시면 됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final" id="apply">
+        <h2 class="animate-on-scroll">스터디에 참여하세요</h2>
+        <p class="animate-on-scroll">함께 배우고, 함께 만들고, 함께 성장하는 4주를 시작하세요.</p>
+        <a href="/apply.html" class="cta-button animate-on-scroll delay-1">지금 신청하기</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">⚡</div>
+                    <h2>Clauders</h2>
+                </div>
+                <p class="footer-tagline">Claude Power Users Community</p>
+                <h3>바이브 프로덕트 4주 MVP 챌린지</h3>
+                <p>내가 겪는 문제, 내가 직접 만드는 솔루션</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://open.kakao.com/o/gyX5gD4h" target="_blank">💬 문의하기 · 오픈카톡</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@AI%EC%9E%A1%EB%8F%8C%EC%9D%B4" target="_blank" class="social-icon" title="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="footer-copyright">© 2025 Clauders. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Particle Network Animation
+        (function() {
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            const hero = document.querySelector('.hero');
+
+            let particles = [];
+            let mouse = { x: null, y: null, radius: 150 };
+
+            // Colors matching the theme
+            const colors = [
+                'rgba(124, 58, 237, 0.6)',  // primary
+                'rgba(139, 92, 246, 0.5)',  // primary-light
+                'rgba(109, 40, 217, 0.4)',  // primary-dark
+                'rgba(167, 139, 250, 0.3)', // lighter purple
+            ];
+
+            function resize() {
+                canvas.width = hero.offsetWidth;
+                canvas.height = hero.offsetHeight;
+                initParticles();
+            }
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.size = Math.random() * 3 + 1;
+                    this.baseSize = this.size;
+                    this.speedX = (Math.random() - 0.5) * 0.8;
+                    this.speedY = (Math.random() - 0.5) * 0.8;
+                    this.color = colors[Math.floor(Math.random() * colors.length)];
+                }
+
+                update() {
+                    // Mouse interaction
+                    if (mouse.x !== null && mouse.y !== null) {
+                        const dx = mouse.x - this.x;
+                        const dy = mouse.y - this.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < mouse.radius) {
+                            const force = (mouse.radius - distance) / mouse.radius;
+                            const angle = Math.atan2(dy, dx);
+                            this.x -= Math.cos(angle) * force * 2;
+                            this.y -= Math.sin(angle) * force * 2;
+                            this.size = this.baseSize + force * 2;
+                        } else {
+                            this.size = this.baseSize;
+                        }
+                    }
+
+                    // Movement
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+
+                    // Boundary check with wrap-around
+                    if (this.x < 0) this.x = canvas.width;
+                    if (this.x > canvas.width) this.x = 0;
+                    if (this.y < 0) this.y = canvas.height;
+                    if (this.y > canvas.height) this.y = 0;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particles = [];
+                const particleCount = Math.min(80, Math.floor((canvas.width * canvas.height) / 12000));
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function connectParticles() {
+                const maxDistance = 120;
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < maxDistance) {
+                            const opacity = (1 - distance / maxDistance) * 0.5;
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(124, 58, 237, ${opacity})`;
+                            ctx.lineWidth = 1;
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                // Connect to mouse
+                if (mouse.x !== null && mouse.y !== null) {
+                    for (let i = 0; i < particles.length; i++) {
+                        const dx = mouse.x - particles[i].x;
+                        const dy = mouse.y - particles[i].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < mouse.radius) {
+                            const opacity = (1 - distance / mouse.radius) * 0.8;
+                            ctx.beginPath();
+                            ctx.strokeStyle = `rgba(124, 58, 237, ${opacity})`;
+                            ctx.lineWidth = 1.5;
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(particle => {
+                    particle.update();
+                    particle.draw();
+                });
+
+                connectParticles();
+                requestAnimationFrame(animate);
+            }
+
+            // Event listeners
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            });
+
+            hero.addEventListener('mouseleave', () => {
+                mouse.x = null;
+                mouse.y = null;
+            });
+
+            // Touch support for mobile
+            hero.addEventListener('touchmove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                mouse.x = e.touches[0].clientX - rect.left;
+                mouse.y = e.touches[0].clientY - rect.top;
+            });
+
+            hero.addEventListener('touchend', () => {
+                mouse.x = null;
+                mouse.y = null;
+            });
+
+            window.addEventListener('resize', resize);
+
+            // Initialize
+            resize();
+            animate();
+        })();
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
